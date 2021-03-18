@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="handycrypto.handycrypto" android:versionCode="1" android:versionName="1.0" android:installLocation="preferExternal">
+	<uses-sdk android:targetSdkVersion="28" android:minSdkVersion="20" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<application android:theme="@style/AppTheme" android:allowBackup="false" android:vmSafeMode="true" android:allowClearUserData="true" android:hardwareAccelerated="true" android:label="HandyCrypto" android:icon="@drawable/handycrypto_logo">
+		<service android:name=".Services.SensorService" android:enabled="true"></service>
+		<provider android:name="android.support.v4.content.FileProvider" android:grantUriPermissions="true" android:exported="false" android:authorities="handycrypto.fileprovider">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+		</provider>
+		<receiver android:name=".Services.BootBroadcast" android:enabled="true" android:exported="true" android:label="RestartServiceWhenStopped"></receiver>
+	</application>
+</manifest>

@@ -1,0 +1,3 @@
+C:\Users\lukam\source\repos\HandyCrypto\HandyCryptoTests\obj\Release\HandyCryptoTests.csprojAssemblyReference.cache
+C:\Users\lukam\source\repos\HandyCrypto\HandyCryptoTests\obj\Release\HandyCryptoTests.csproj.CoreCompileInputs.cache
+D:\ll\S\HandyCrypto\HandyCryptoTests\obj\Release\HandyCryptoTests.csprojAssemblyReference.cache

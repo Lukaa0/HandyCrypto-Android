@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\MonoAndroid90\proguard.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_googlefb_firebaseanalyticsimpl" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_googlefb_firebaseanalyticsimpl">
+    <ItemGroup>
+      <XamarinBuildDownload Include="googlefb-16.2.4/firebaseanalyticsimpl">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-analytics-impl/16.2.4/firebase-analytics-impl-16.2.4.aar</Url>
+        <ToFile>firebaseanalyticsimpl-16.2.4.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Md5>93d038a5d5da1a8befb0b39553d121da</Md5>
+      </XamarinBuildDownload>
+    </ItemGroup>
+    <ItemGroup>
+      <XamarinBuildDownloadRestoreAssemblyAar Include="$(XamarinBuildDownloadDir)googlefb-16.2.4\firebaseanalyticsimpl\firebaseanalyticsimpl-16.2.4.aar">
+        <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+        <AssemblyName>Xamarin.Firebase.Analytics.Impl</AssemblyName>
+      </XamarinBuildDownloadRestoreAssemblyAar>
+    </ItemGroup>
+  </Target>
+
+</Project>

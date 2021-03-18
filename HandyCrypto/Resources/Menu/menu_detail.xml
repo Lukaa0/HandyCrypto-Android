@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+   android:id="@+id/set_icon"
+   android:icon="@drawable/ic_chat_white_24dp"
+   android:orderInCategory="3"
+   app:showAsAction="always"/>
+
+  <item
+        android:id="@+id/addto_wallet"
+        android:icon="@drawable/ic_add_circle_white_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+
+        />
+  <item
+        android:id="@+id/add_alarm"
+        android:icon="@drawable/ic_add_alert_white_24dp"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+
+        />
+
+</menu>

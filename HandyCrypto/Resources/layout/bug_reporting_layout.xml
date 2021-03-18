@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="4px"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        
+       style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_height="wrap_content"
+    android:text="E-Mail(Optional)"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/bug_email"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_height="wrap_content"
+    android:hint="E-Mail"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_height="wrap_content"
+    android:text="Bug title"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/bug_title"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_height="wrap_content"
+    android:hint="Bug title"/>
+<TextView
+        android:layout_width="wrap_content"
+        android:paddingLeft="5dp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_height="wrap_content"
+    android:text="Bug description"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:id="@+id/bug_description"
+    android:layout_weight="0.5"
+    android:gravity="left|top"
+    android:inputType="textCapSentences|textMultiLine"
+    android:hint="Description"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send"
+    android:id="@+id/bug_send_btn"
+    style="@style/Widget.AppCompat.Button.Borderless.Colored" 
+    android:layout_gravity="right"/>
+</LinearLayout>

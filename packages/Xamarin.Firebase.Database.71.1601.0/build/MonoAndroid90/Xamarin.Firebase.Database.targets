@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_googlefb_firebasedatabase" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_googlefb_firebasedatabase">
+    <ItemGroup>
+      <XamarinBuildDownload Include="googlefb-16.0.1/firebasedatabase">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-database/16.0.1/firebase-database-16.0.1.aar</Url>
+        <ToFile>firebasedatabase-16.0.1.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Md5>82703b0d97df2efdc5aafa41c2b2b066</Md5>
+      </XamarinBuildDownload>
+    </ItemGroup>
+    <ItemGroup>
+      <XamarinBuildDownloadRestoreAssemblyAar Include="$(XamarinBuildDownloadDir)googlefb-16.0.1\firebasedatabase\firebasedatabase-16.0.1.aar">
+        <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+        <AssemblyName>Xamarin.Firebase.Database</AssemblyName>
+      </XamarinBuildDownloadRestoreAssemblyAar>
+    </ItemGroup>
+  </Target>
+
+</Project>

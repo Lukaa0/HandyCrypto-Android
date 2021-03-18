@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?attr/colorPrimary"
+        android:padding="15dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/wallet_detail_back_btn"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_18dp"
+                android:background="@android:color/transparent"
+                />
+/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/upTitle2"
+            android:textSize="29sp" />
+      
+
+            <TextView
+                android:id="@+id/wallet_profit2"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/upTitle2"
+                android:text="awda"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp" />
+            <!--<TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:textsize="10dp"
+          android:textcolor="#ff0000"
+          android:text="(-23%)"/>-->
+        </RelativeLayout>
+	
+    <HandyCrypto.Model.CryptoScrollView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+		android:id="@+id/wallet_item_scrollview"
+        android:background="#F5FFFA"
+        android:layout_height="match_parent">
+			
+		
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+			
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/walletCoinImage"
+                    android:layout_gravity="center"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/walletCoinImage"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/statsHeader"
+                    android:textSize="30sp"
+                    android:text="Stats" />
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statsHeader"
+                    android:id="@+id/statsLine"
+                    android:background="#dedede"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/statsLine"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/percentHour"
+                    android:textSize="13sp"
+                    android:text="Percent change(1H) : " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/percentHour"
+                    android:id="@+id/percentDay"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Percent change(1D) : " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/percentDay"
+
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:id="@+id/percentWeek"
+                    android:text="Percent change(1W) : " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:id="@+id/MarketCap"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/percentHour"
+                    app:layout_constraintTop_toBottomOf="@+id/statsLine"
+                    android:text="Market Cap : " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalSupply"
+                    app:layout_constraintTop_toBottomOf="@+id/MarketCap"
+                    app:layout_constraintLeft_toRightOf="@+id/percentDay"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="13sp"
+                    android:text="Total Supply : " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/totalSupply"
+                    app:layout_constraintLeft_toRightOf="@+id/percentWeek"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="13sp"
+                    android:id="@+id/Rank"
+                    android:text="Rank : " />
+            </android.support.constraint.ConstraintLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#dedede"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:text="Personal Stats" />
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:background="#dedede"
+                android:layout_height="1dp" />
+			
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="6"
+                android:layout_width="match_parent">
+				<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/wallet_track_price_txt"
+				android:layout_gravity="center"
+				android:textSize="25sp"
+				/>
+				<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:id="@+id/wallet_track_date_txt"
+				android:textSize="15sp"
+				/>
+
+                   <FrameLayout
+						android:layout_width="match_parent"
+						android:layout_gravity="center"
+					android:id="@+id/wallet_chart_container"
+					android:minHeight="250dp"
+					android:layout_weight="3"
+						android:layout_height="0dip"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="0dip"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Profit(1H)"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true" />
+                        <TextView
+                            android:text="Loading..."
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/wallet_profit_1h"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="0dip">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Profit(24H)"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true" />
+                        <TextView
+                            android:text="Loading..."
+                            android:id="@+id/wallet_profit_1d"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardUseCompatPadding="true"
+                    android:layout_weight="1"
+                    android:layout_height="0dip">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="Profit(All)"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true" />
+                        <TextView
+                            android:id="@+id/percentAllTime"
+                            android:text="Loading..."
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+		
+    </HandyCrypto.Model.CryptoScrollView>
+    
+</LinearLayout>
+ 
+	
+</RelativeLayout>

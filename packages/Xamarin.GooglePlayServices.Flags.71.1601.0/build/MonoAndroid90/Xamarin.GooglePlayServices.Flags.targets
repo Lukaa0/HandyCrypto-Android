@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_googlegps_playservicesflags" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_googlegps_playservicesflags">
+    <ItemGroup>
+      <XamarinBuildDownload Include="googlegps-16.0.1/playservicesflags">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-flags/16.0.1/play-services-flags-16.0.1.aar</Url>
+        <ToFile>playservicesflags-16.0.1.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Md5>99dec5bbf5337c95eef608c0cc6e864d</Md5>
+      </XamarinBuildDownload>
+    </ItemGroup>
+    <ItemGroup>
+      <XamarinBuildDownloadRestoreAssemblyAar Include="$(XamarinBuildDownloadDir)googlegps-16.0.1\playservicesflags\playservicesflags-16.0.1.aar">
+        <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+        <AssemblyName>Xamarin.GooglePlayServices.Flags</AssemblyName>
+      </XamarinBuildDownloadRestoreAssemblyAar>
+    </ItemGroup>
+  </Target>
+
+</Project>

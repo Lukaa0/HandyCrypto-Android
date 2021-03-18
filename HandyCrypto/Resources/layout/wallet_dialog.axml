@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:gravity="center_horizontal"
+    android:background="?attr/colorPrimary"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Choose a coin " />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="39dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeBtn"
+        
+        style="@android:style/Widget.DeviceDefault.Button.Colored"
+        android:layout_width="match_parent"
+        android:minWidth="100dp"
+        android:text="Pick date" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:id="@+id/wallet_dialog_date_label"/>
+    <TextView
+        android:layout_marginTop="39dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        
+        android:text="Enter the amount" />
+    
+            <EditText
+                android:layout_marginTop="39dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/boughtEditTxt"
+                android:inputType="numberDecimal"
+                android:drawableRight="@drawable/ic_attach_money_green_dark_18dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="submit"
+            android:id="@+id/submitBtn"
+            android:background="#32CD32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" />
+        <Button
+            android:text="cancel"
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/no_con_img"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_signal_wifi_off_blue_dark_36dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:id="@+id/no_con_retry_button"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored"
+        android:backgroundTint="?android:attr/colorPrimaryDark"/>
+</LinearLayout>

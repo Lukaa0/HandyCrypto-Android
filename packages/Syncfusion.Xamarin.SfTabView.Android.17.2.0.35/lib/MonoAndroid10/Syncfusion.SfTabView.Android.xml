@@ -1,0 +1,2359 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfTabView.Android</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.Android.TabView.MoreButton">
+            <summary>
+            More button class
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.overflowButtonSettings">
+            <summary>
+            Over flow button settings field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.popup">
+            <summary>
+            Overflow PopupWindow. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.menuList">
+            <summary>
+            Menu list field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.paint">
+            <summary>
+            Paint field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.bitmap">
+            <summary>
+            Bitmap field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.canvas">
+            <summary>
+            Canvas field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.displayMode">
+            <summary>
+            Display mode field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.tabView">
+            <summary>
+            Tab view field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.tabHeaderContainer">
+            <summary>
+            Tab Header Container field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.moreButtonIndex">
+            <summary>
+            More Button index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.scroll">
+            <summary>
+            Scroll view inside the PopupWindow
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.popupContent">
+            <summary>
+            LinearLayout used inside the PopupWindow
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.linear">
+            <summary>
+            Content of the PopupWindow 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.fonticon">
+            <summary>
+            Fonticon used in the PopUpwindow
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.MoreButton.text">
+            <summary>
+            Text used in the PopupWindow content;
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView,Syncfusion.Android.TabView.TabHeaderContainer,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.MoreButton" /> class.
+            </summary>
+            <param name="context">Context type</param>
+            <param name="tabview1">Tab view type</param>
+            <param name="tabHeaderContainer1">Tab Header container type</param>
+            <param name="moreButtonIndex1">Integer type</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.MoreButton.Title">
+            <summary>
+            Gets or sets the value of title property.
+            </summary>      
+        </member>
+        <member name="P:Syncfusion.Android.TabView.MoreButton.IconFont">
+            <summary>
+            Gets or sets the value of Icon font property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.MoreButton.ImagePath">
+            <summary>
+            Gets or sets the value of image path property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.MoreButton.OverflowButtonSettings">
+            <summary>
+            Gets or sets the overflow button settings.
+            </summary>
+            <value>The overflow button settings.</value>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.MoreButton.DisplayMode">
+            <summary>
+            Gets or sets the value of display mode property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.OnTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            On touch event
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>returns value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.GetText">
+            <summary>
+            Get text method.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.UpdateText(System.String)">
+            <summary>
+            Update text method.
+            </summary>
+            <param name="newText">String type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.GetOverflowItemBounds(System.Double,System.Double,System.String,System.String,Syncfusion.Android.TabView.OverflowButtonSettings,System.Boolean)">
+            <summary>
+            Get overflow item bounds
+            </summary>
+            <param name="width">width value</param>
+            <param name="height">Height value</param>
+            <param name="text">Text type</param>
+            <param name="fonttext">Font text</param>
+            <param name="headerSettings">Header settings</param>
+            <param name="isImageTextBounds">Is iamge text bounds</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.OnDraw(Android.Graphics.Canvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.Dispose(System.Boolean)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.Popup_MenuItemClick(System.Object,Android.Widget.PopupMenu.MenuItemClickEventArgs)">
+            <summary>
+            Pop up menu item click method.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Click event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.AddMenuFromHeaderValues(Android.Widget.PopupWindow)">
+            <summary>
+            Add menu from header values method.
+            </summary>
+            <param name="popup">Popup menu</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.DrawText(Android.Graphics.Canvas,System.Int32,System.Int32)">
+            <summary>
+            Draw text method.
+            </summary>
+            <param name="canvas">Canvas type</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.DrawFont(Android.Graphics.Canvas,System.Int32,System.Int32)">
+            <summary>
+            Draw font method.
+            </summary>
+            <param name="canvas">Canvas type</param>
+            <param name="left">left value</param>
+            <param name="top">top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.MoreButton.GetBitMapFromImageName(System.String)">
+            <summary>
+            Get Bitmap from image name method.
+            </summary>
+            <param name="imageName">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.OverflowButtonSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView" />.
+            It is applicable when <see cref="T:Syncfusion.Android.TabView.OverflowMode" /> is set as drop down.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.width">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.text">
+            <summary>
+            Text field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.fontText">
+            <summary>
+            Font text field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.displayMode">
+            <summary>
+            dispaly mode field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.overflowButtonFontStyle">
+            <summary>
+            Over flow button font style field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.overflowButtonFontSize">
+            <summary>
+            Over flow button ont size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.overflowButtonFontColor">
+            <summary>
+            Over flow button font color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.backgroundColor">
+            <summary>
+            Background color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.fontIconStyle">
+            <summary>
+            Typeface field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.fontIconFontSize">
+            <summary>
+            Font icon font size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonSettings.fontIconFontColor">
+            <summary>
+            Font icon font color field.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.OverflowButtonSettings.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.Title">
+            <summary>
+            Gets or sets the value for more button text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.Width">
+            <summary>
+            Gets or sets the value for the width of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.DisplayMode">
+            <summary>
+            Gets or sets the value to choose the display type of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.TitleFontSize">
+            <summary>
+            Gets or sets the value to font size of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.TitleFontColor">
+            <summary>
+            Gets or sets the value to font color of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.IconFont">
+            <summary>
+            Gets or sets the value for more button font text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.FontIconFontSize">
+            <summary>
+            Gets or sets the value to font size of icon text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.FontIconStyle">
+            <summary>
+            Gets or sets the value to font family of icon text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.BackgroundColor">
+            <summary>
+            Gets or sets the value for the background color of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.TitleFontStyle">
+            <summary>
+            Gets or sets the value to font family of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.OverflowButtonSettings.FontIconFontColor">
+            <summary>
+            Gets or sets the value to font color of icon text in more button.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.OverflowButtonSettings.RaiseOnPropertyChanged(System.String)">
+            <summary>
+            This method is called by the Set accessor of each property.
+            The CallerMemberName attribute that is applied to the optional propertyName
+            parameter causes the property name of the caller to be substituted as an argument.
+            </summary>
+            <param name="propertyName">String type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SelectionIndicatorSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for selection indicator in <see cref="T:Syncfusion.Android.TabView.SfTabView"/>,
+            selection indicator is strip which is to indicate the selected index in the <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorSettings.position">
+            <summary>
+            Position field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorSettings.color">
+            <summary>
+            color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorSettings.strokeThickness">
+            <summary>
+            stroke thickness field.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SelectionIndicatorSettings.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionIndicatorSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.SelectionIndicatorSettings"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionIndicatorSettings.#ctor(Android.Content.Context)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.SelectionIndicatorSettings"/> class with context to set the accent color.
+            </summary>
+            <param name="context">context type</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionIndicatorSettings.Position">
+            <summary>
+            Gets or sets the value for the position of selection indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionIndicatorSettings.Color">
+            <summary>
+            Gets or sets the value for the color of selection indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionIndicatorSettings.StrokeThickness">
+            <summary>
+            Gets or sets the value for the thickness of selection indicator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionIndicatorSettings.RaiseOnPropertyChanged(System.String)">
+            <summary>
+            This method is called by the Set accessor of each property.
+            The CallerMemberName attribute that is applied to the optional propertyName
+            parameter causes the property name of the caller to be substituted as an argument.
+            </summary>
+            <param name="propertyName">String type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabItemCollection">
+            <summary>
+            Represents a collection which holds the children for tab control through the collection of <see cref="T:Syncfusion.Android.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.Border">
+            <inheritdoc />
+            <summary>
+            Helps to draw a rectangular border based on the given attributes such as color thickness and bounds value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.Border.paint">
+            <summary>
+            Paint field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.Border.bounds">
+            <summary>
+            Bounds field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.#ctor(Android.Graphics.Color,System.Single)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.Border"/> class.
+            </summary>
+            <param name="color">color tpe</param>
+            <param name="width">Float type</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.Border.Opacity">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.Draw(Android.Graphics.Canvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.SetAlpha(System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.SetColorFilter(Android.Graphics.ColorFilter)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.OnBoundsChange(Android.Graphics.Rect)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.Border.Dispose(System.Boolean)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.ContentContainer">
+            <inheritdoc />
+        </member>
+        <member name="F:Syncfusion.Android.TabView.ContentContainer.selectedIndex">
+            <summary>
+            Selected index field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.ContentContainer.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.ContentContainer.RaiseSelectionChanged(Syncfusion.Android.TabView.IndexChangedEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SelectionStrip">
+            <inheritdoc />
+            <summary>
+            Represents the UI for the selected header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionStrip.paint">
+            <summary>
+            Paint field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionStrip.tabView">
+            <summary>
+            Tab view field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionStrip.selectedIndex">
+            <summary>
+            Selected index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionStrip.count">
+            <summary>
+            Count field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionStrip.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.SelectionStrip"/> class.
+            </summary>
+            <param name="context">context type</param>
+            <param name="tabView1">tab view type</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionStrip.SelectedIndex">
+            <summary>
+            Gets or sets the value of Selected index property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionStrip.Count">
+            <summary>
+            Gets or sets the value of count property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionStrip.OnDraw(Android.Graphics.Canvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SelectionStrip.Dispose(System.Boolean)">
+            <summary>
+            dispose method
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SfSwipePager">
+            <summary>
+            Contains swipe mechanism to navigate the children using touch gestures.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.headerPadding">
+            <summary>
+            Header padding field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.selectionChangedEventArgs">
+            <summary>
+            Selection changed event args
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.scrollDeltaOffset">
+            <summary>
+            Scroll delta offset field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.animationDuration">
+            <summary>
+            Animation duration field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.minimumOffsetValue">
+            <summary>
+            Minimum offset value
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.allow">
+            <summary>
+            The bool value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.yOffsetValue">
+            <summary>
+            The offset value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.xOffsetValue">
+            <summary>
+            The offset offset.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.isFling">
+            <summary>
+            Is Filing field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.isMoved">
+            <summary>
+            Is moved field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.isForwardAction">
+            <summary>
+            Is forward action field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.tabView">
+            <summary>
+            Is forward action field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.index">
+            <summary>
+            Index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.position">
+            <summary>
+            Position field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.gestureDetector">
+            <summary>
+            Gesture Detector field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.FirstContentView">
+            <summary>
+            first item field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.enableSwiping">
+            <summary>
+            Enable swipping field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.yPosition">
+            <summary>
+            Positions field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.xPosition">
+            <summary>
+            Positions field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfSwipePager.objectAnimator">
+            <summary>
+            The animator field.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfSwipePager.IndexChangedEvent">
+            <summary>
+            Occurs when double tap on the cell or appointment inside the cell.
+            </summary>
+            <remarks>
+            ScheduleTappedEventArgs.Appointment will have value when appointment gets tapped, otherwise it will be null.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.SfSwipePager"/> class.
+            </summary>
+            <param name="context">Context Type.</param>
+            <param name="tabview">Tabview class.</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfSwipePager.EnableSwiping">
+            <summary>
+            Gets or sets a value indicating whether the value of Enable swiping property
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfSwipePager.HeaderPadding">
+            <summary>
+            Gets or sets a value indicating whether the value of Enable swiping property
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.GetIndex">
+            <summary>
+            Get index method.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.OnInterceptTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            On intercept touch event method.
+            </summary>
+            <param name="ev">motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.OnTouchEvent(Android.Views.MotionEvent)">
+            <inheritdoc />
+            Handles touch events in this view to perform all the swipe navigations.
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnFling(Android.Views.MotionEvent,Android.Views.MotionEvent,System.Single,System.Single)">
+            <summary>
+            On fling method
+            </summary>
+            <param name="e1">Motion event1</param>
+            <param name="e2">Motion event2</param>
+            <param name="velocityX">VelocityX value</param>
+            <param name="velocityY">VelocityY value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnScroll(Android.Views.MotionEvent,Android.Views.MotionEvent,System.Single,System.Single)">
+            <summary>
+            On scroll merhod.
+            </summary>
+            <param name="e1">Motion event1</param>
+            <param name="e2">Motion event2</param>
+            <param name="distanceX">DistanceX value</param>
+            <param name="distanceY">DistanceY value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnDown(Android.Views.MotionEvent)">
+            <summary>
+            On down method.
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnLongPress(Android.Views.MotionEvent)">
+            <summary>
+            On long press method.
+            </summary>
+            <param name="e">Motion event</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnShowPress(Android.Views.MotionEvent)">
+            <summary>
+            On show press method.
+            </summary>
+            <param name="e">Motion event</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Android#Views#GestureDetector#IOnGestureListener#OnSingleTapUp(Android.Views.MotionEvent)">
+            <summary>
+            On single tap up method.
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.CanTriggerSelectionChangedEvent">
+            <summary>
+            To check Whether the index changed Event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.RaiseSelectionChanged(Syncfusion.Android.TabView.IndexChangedEventArgs)">
+            <summary>
+            Invoke event with the updated index value.
+            </summary>
+            <param name="args">Event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.SetIndex(System.Int32)">
+            <summary>
+            Set index method.
+            </summary>
+            <param name="value">integer type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.UpdateSelectedIndex(System.Int32)">
+            <summary>
+            update selected index method.
+            </summary>
+            <param name="newValue">new value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+            Position all children within this layout.
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.Dispose(System.Boolean)">
+            <summary>
+            Dispose method 
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.GetViewIndex(Android.Views.View)">
+            <summary>
+            To get the current index of the collection based on the position of first child.
+            </summary>
+            <param name="view">view type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.MoveToNextView(System.Boolean,System.Int32)">
+            <summary>
+            Move to next view method.
+            </summary>
+            <param name="isCancelTransition">Boolean type</param>
+            <param name="indexOffset">Integer type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.GetAnimator(Android.Views.View,System.Single)">
+            <summary>
+            Get animator method.
+            </summary>
+            <param name="view">View type</param>
+            <param name="delta">Float type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfSwipePager.AllowNavigation(System.Int32)">
+            <summary>
+            Allow navigation method.
+            </summary>
+            <param name="offset">Integer type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.IndexChangedEventArgs">
+            <summary>
+            Provides data for the selection index change event of <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.IndexChangedEventArgs.OldValue">
+            <summary>
+            Gets or sets the value of  old value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.IndexChangedEventArgs.NewValue">
+            <summary>
+            Gets or sets the value of New value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabHeaderContainer">
+            <summary>
+            Contains items to be arranged in the header layout.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.tabView">
+            <summary>
+            Tab view field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.selectionStrip">
+            <summary>
+            selectionstrip field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.button">
+            <summary>
+            Button field. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.isMoreButtonAdded">
+            <summary>
+            Is more button added field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.moreButtonIndex">
+            <summary>
+            More button index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.gestureDetector">
+            <summary>
+            Gesture detecter field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.width">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderContainer.tag">
+            <summary>
+            The tag.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.TabHeaderContainer"/> class.
+            </summary>
+            <param name="context">Context type</param>
+            <param name="tab">Tab view</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderContainer.TabView">
+            <summary>
+            Gets or sets the rotator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnFling(Android.Views.MotionEvent,Android.Views.MotionEvent,System.Single,System.Single)">
+            <summary>
+            On fling method.
+            </summary>
+            <param name="e1">Motion event1</param>
+            <param name="e2">Motion event2</param>
+            <param name="velocityX">VelocityX value</param>
+            <param name="velocityY">VelocityY value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnScroll(Android.Views.MotionEvent,Android.Views.MotionEvent,System.Single,System.Single)">
+            <summary>
+            On scroll method
+            </summary>
+            <param name="e1">Motion event1</param>
+            <param name="e2">Motion event2</param>
+            <param name="distanceX">DistanceX value</param>
+            <param name="distanceY">DistanceY value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnDown(Android.Views.MotionEvent)">
+            <summary>
+            On down method.
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnLongPress(Android.Views.MotionEvent)">
+            <summary>
+            On long press method
+            </summary>
+            <param name="e">Motion event</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnShowPress(Android.Views.MotionEvent)">
+            <summary>
+            On show press method
+            </summary>
+            <param name="e">Motion event</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Android#Views#GestureDetector#IOnGestureListener#OnSingleTapUp(Android.Views.MotionEvent)">
+            <summary>
+            On single tapup method.
+            </summary>
+            <param name="e">Motion event </param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.UpdateHeaderStyle(System.Int32)">
+            <summary>
+            Update Header Style method.
+            </summary>
+            <param name="selectedIndex">Integer type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.RefreshTabs">
+            <summary>
+            Refresh Tabs method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.GetTabItem(System.Single,System.Single)">
+            <summary>
+            Gets the tab item.
+            </summary>
+            <returns>The tab item.</returns>
+            <param name="x">The x coordinate.</param>
+            <param name="y">The y coordinate.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.GetIndexfromPosition(System.Single)">
+            <summary>
+            Get index position method.
+            </summary>
+            <param name="xPosition">position value</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.AddMoreButton">
+            <summary>
+            Add more button method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.OnTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            Ons the touch event.
+            </summary>
+            <returns><c>true</c>, if touch event was oned, <c>false</c> otherwise.</returns>
+            <param name="e">E.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+            <summary>
+            Position all children within this layout.
+            </summary>
+            <param name="changed">Boolean type</param>
+            <param name="left">Left type</param>
+            <param name="top">Top type</param>
+            <param name="right">Right value</param>
+            <param name="bottom">Bottom value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.LayoutTabHeader(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Layouts the tab header.
+            </summary>
+            <param name="flowFactor">If set to <c>true</c> flow factor.</param>
+            <param name="headerWidth">Header width.</param>
+            <param name="right">Right.</param>
+            <param name="bottom">Bottom.</param>
+            <param name="tabIndex">Tab index.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.LayoutTabHeaderOnCenter(System.Boolean,System.Int32)">
+            <summary>
+            Layouts the tab header on center.
+            </summary>
+            <param name="flowFactor">If set to <c>true</c> flow factor.</param>
+            <param name="bottom">Bottom.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderContainer.Dispose(System.Boolean)">
+            <summary>
+            Dispose method
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabHeaderView">
+            <inheritdoc />
+            <summary>
+            Draws the appearance of header item based on <see cref="T:Syncfusion.Android.TabView.TabHeaderView"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.tabItem">
+            <summary>
+            Tab item field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.tabView">
+            <summary>
+            Tab view field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.isSeleted">
+            <summary>
+            Selected field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.paint">
+            <summary>
+            Paint field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.bitmap">
+            <summary>
+            Bit map field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.headerCanvas">
+            <summary>
+            Canvas field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderView.tabDisplayMode">
+            <summary>
+            Tab dispaly mode field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView,Syncfusion.Android.TabView.SfTabItem,Syncfusion.Android.TabView.TabDisplayMode,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.TabHeaderView"/> class.
+            </summary>
+            <param name="context">Context type</param>
+            <param name="tab">Tab view </param>
+            <param name="item">Tab item</param>
+            <param name="tabDisplayMode">Tab dispaly mode</param>
+            <param name="fontText">Font text</param>
+            <param name="imagePage">Image path</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether the value of Selected property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.Text">
+            <summary>
+            Gets or sets the value of text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.FontText">
+            <summary>
+            Gets or sets the font text property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.ImagePath">
+            <summary>
+            Gets or sets the value of Image path property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.TabDisplayMode">
+            <summary>
+            Gets or sets the property of Tab dispaly mode property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.TabView">
+            <summary>
+            Gets or sets the rotator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabHeaderView.TabItem">
+            <summary>
+            Gets or sets the TabItem.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.OnTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            On touch event
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.GetText">
+            <summary>
+            Get text
+            </summary>
+            <returns>Return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.UpdateText(System.String)">
+            <summary>
+            Update text method.
+            </summary>
+            <param name="newText">string type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.GetHeaderItemBounds(System.Double,System.Double,System.String,System.String,System.Boolean)">
+            <summary>
+            Get Header Item bounds
+            </summary>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <param name="text">Text type</param>
+            <param name="fonttext">Font text</param>
+            <param name="isImageTextBounds">Is image text bounds type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.OnDraw(Android.Graphics.Canvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.Dispose(System.Boolean)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.DrawText(System.Int32,System.Int32)">
+            <summary>
+            Draw text method.
+            </summary>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.DrawFont(System.Int32,System.Int32)">
+            <summary>
+            Draw font method.
+            </summary>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabHeaderView.GetBitMapFromImageName(System.String)">
+            <summary>
+            Get Bitmap from image name method.
+            </summary>
+            <param name="imageName">Path value of resource's image</param>
+            <returns>return the Bitmap image of given resource folder's image</returns>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabViewHelper">
+            <summary>
+            Contains static helper methods which are not dependent to any classes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.DensityConverter(System.Double,Android.Content.Context)">
+            <summary>
+            Gets denisity based value for actual value.
+            </summary>
+            <param name="oldValue">Old value</param>
+            <param name="context">Context type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.RefreshView(Android.Views.View)">
+            <summary>
+            Redraws the view based on the updated values.
+            </summary>
+            <param name="view">view type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetTabWidth(System.Boolean,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Get tab width method.
+            </summary>
+            <param name="isVisibleCoulmnSet">booelan type</param>
+            <param name="totalWidth">Total width</param>
+            <param name="visibleColumn">Visible coloumn</param>
+            <param name="childCount">Child count</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetBounds(Android.Content.Context,System.Double,System.Double,System.String,System.String,System.Double,System.String,Android.Graphics.Paint)">
+            <summary>
+            Get bounds method
+            </summary>
+            <param name="context">Context type</param>
+            <param name="height">height value</param>
+            <param name="width">Width value</param>
+            <param name="text">text value</param>
+            <param name="size">Paint type</param>
+            <param name="fontText">Font text</param>
+            <param name="tabDisplayMode">Tab display mode</param>
+            <param name="paint">Paint type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetHeaderItemBounds(Android.Content.Context,System.Double,System.Double,System.Double,System.Boolean,Android.Graphics.RectF,Android.Graphics.Paint,System.String,Syncfusion.Android.TabView.SelectionIndicatorPosition)">
+            <summary>
+            Get Header Item Bounds mrthod.
+            </summary>
+            <param name="context">Context type</param>
+            <param name="width">Width value</param>
+            <param name="height">Height value</param>
+            <param name="imageSize">Image size</param>
+            <param name="isImage">Boolean type</param>
+            <param name="paddingBounds">Padding bounds</param>
+            <param name="paint">Paint type</param>
+            <param name="text">String type</param>
+            <param name="position">Position place</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetImagePosition(Syncfusion.Android.TabView.SelectionIndicatorPosition)">
+            <summary>
+            selection Indicator Position method.
+            </summary>
+            <param name="position">Selection indicator position type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetDefaultPadding(Android.Content.Context,System.Boolean)">
+            <summary>
+            Get default padding
+            </summary>
+            <param name="context">Context type</param>
+            <param name="containsImage">Contains image</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.TabViewHelper.GetTextWidth(Android.Graphics.Typeface,System.String)">
+            <summary>
+            Get text Width mehtod
+            </summary>
+            <param name="style">Type face method.</param>
+            <param name="text">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SfTabView">
+            <summary>
+            TabView control lets users explore and switch among different views.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabItemTappedEventArgs">
+            <summary>
+            Item tabbed event args
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.orientationChanged">
+            <summary>
+            Control loaded field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.centerButtonRenderer">
+            <summary>
+            The center button renderer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.mhandler">
+            <summary>
+            The m Handler.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.isControlLoaded">
+            <summary>
+            Control loaded field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.enableSwiping">
+            <summary>
+            Enable Swiping field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.contentTransitionDuration">
+            <summary>
+            Content Transition Duration field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.headerContainer">
+            <summary>
+            Head container field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.contentContainer">
+            <summary>
+            Content container field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.selectionChangedEventArgs">
+            <summary>
+            Selection changed event args
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.oldindex">
+            <summary>
+            The oldindex field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.count">
+            <summary>
+            Visible header count field
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.items">
+            <summary>
+            Items field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.previousTabItems">
+            <summary>
+            The previousTabItems holds the previous Items property value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabHeaderBackgroundColor">
+            <summary>
+            Tab header background color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.selectedIndex">
+            <summary>
+            selected index field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.selectionIndicatorSettings">
+            <summary>
+            Selection indicator field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabHeaderPosition">
+            <summary>
+            Tab header position field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.overflowMode">
+            <summary>
+            Over flow mode field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.centerButtonView">
+            <summary>
+            View for CenterButton
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.overflowButtonSettings">
+            <summary>
+            Over flow button settings field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.centerButtonSettings">
+            <summary>
+            Over flow button settings field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabHeight">
+            <summary>
+            Tab height field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.displayMode">
+            <summary>
+            Dispaly mode field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.visibleHeaderCount">
+            <summary>
+            Visible header count field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.mrunnable">
+            <summary>
+            Visible header count field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabWidth">
+            <summary>
+            Tab width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.scrollView">
+            <summary>
+            The horizontal scroll view contains the header view of tabview
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.indexOfRemovedTabItem">
+            <summary>
+            The index of removed tab view.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tagOfRemovedTabItem">
+            <summary>
+            The tag of removed tab item.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.shadowGradientStartColor">
+            <summary>
+            Shadow Effect Start Color
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.elevationShadowColor">
+            <summary>
+            Shadow Color
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.elevation">
+            <summary>
+            Height of the Shadow Effect
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.shadowGradientEndColor">
+            <summary>
+            Shadow Effect End Color
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabView.SelectionChanged">
+            <summary>
+            Occurs when index changed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabView.OverflowButtonTapped">
+            <summary>
+            Occurs when overflow button tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabView.CenterButtonTapped">
+            <summary>
+            Occurs when Center button tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabView.TabItemTapped">
+            <summary>
+            Occurs when tab header item tapped.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabView.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.shadowLayout">
+            <summary>
+            Stores a layout for shadow effect
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabSelectionStrip">
+            <summary>
+            The tab selection strip.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.shadowColors">
+            <summary>
+            Array of integer representing the shadow gradient colors
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.shadowGradient">
+            <summary>
+            Gradient Drawable for the background of shadow layout
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.accessibilityText">
+            <summary>
+            The accessibility text to readout while tapping the SfTabItem.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.overflowAccessibilityText">
+            <summary>
+            The overflow accessibility text to readout while tapping the Overflow button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tagOfTab">
+            <summary>
+            The tag of tab.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.tabOfButton">
+            <summary>
+            The tab of button.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.internalTabHeaderWidth">
+            <summary>
+            The width of the internal tab header.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.selectionStripAnimator">
+            <summary>
+            The selection strip animator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.scrollViewAnimator">
+            <summary>
+            The scroll view animator.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.selectionAnimators">
+            <summary>
+            The selection animators.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabView.isHeaderTouched">
+            <summary>
+             tab header touched field.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.#ctor(Android.Content.Context)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.SfTabView"/> class.
+            </summary>
+            <param name="context">Context type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.#ctor(Android.Content.Context,Android.Util.IAttributeSet)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Com.Syncfusion.SegmentedControl.SfSegmentedControl"/> class.
+            </summary>
+            <param name="context">Context Type</param>
+            <param name="attribute">Attribute sets</param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.Items">
+            <summary>
+            Gets or sets children for tab control through the collection of <see cref="T:Syncfusion.Android.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.TabHeaderBackgroundColor">
+            <summary>
+            Gets or sets the color of the tab header background in <see cref="T:Syncfusion.Android.TabView.SfTabView"/>.
+            </summary>
+            <value>The color of the tab header background.</value>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.SelectedIndex">
+            <summary>
+            Gets or sets the value for current view index.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.EnableSwiping">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Com.Syncfusion.SfTabView.SfTabView"/> enable swiping.
+            </summary>
+            <value><c>true</c> if enable swiping; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.ContentTransitionDuration">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Com.Syncfusion.SfTabView.SfTabView"/> Content Transition Duration.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.SelectionIndicatorSettings">
+            <summary>
+            Gets or sets value to configure the attributes of <see cref="P:Syncfusion.Android.TabView.SfTabView.SelectionIndicatorSettings"/>,
+            Selection indicator is a strip which is used to indicate the selected index of <see cref="T:Syncfusion.Android.TabView.SfTabView"/>
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.TabHeaderPosition">
+            <summary>
+            Gets or sets the value for the position of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.OverflowMode">
+            <summary>
+            Gets or sets the value to choose navigation option for the exceeded headers which can't be occupied in the current view.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.OverflowButtonSettings">
+            <summary>
+            Gets or sets the value to configure the overflow button attributes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.CenterButtonSettings">
+            <summary>
+            Gets or sets the value to configure the overflow button attributes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.DisplayMode">
+            <summary>
+            Gets or sets the value to define the type of header. By default it will display title from <see cref="T:Syncfusion.Android.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.VisibleHeaderCount">
+            <summary>
+            Gets or sets the value for the number of headers to be displayed in the visible region.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.TabHeight">
+            <summary>
+            Gets or sets the value for the height of header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.TabWidth">
+            <summary>
+            Gets or sets the value for the width of each header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.Elevation">
+            <summary>
+            Get or Sets the boolean variable to enable shadow of Tab Header. 
+            Available only in android.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.ElevationShadowColor">
+            <summary>
+            Gets or sets shadow color of elevation
+            Available only in android.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabView.IsAnimationEnd">
+            <summary>
+            Gets or sets whether the animation is ended or not
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CanTriggerSelectionChangedEvent">
+            <summary>
+            To check Whether the selection changed event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RaiseSelectionChanged(Syncfusion.Android.TabView.SelectionChangedEventArgs)">
+            <summary>
+            Invoke event with the updated index value.
+            </summary>
+            <param name="args">event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CanTriggerOverflowButtonTappedEvent">
+            <summary>
+            To check Whether the overflow button tapped event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RaiseOverflowButtonTapped(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            Invoke event with the status for overflow button tapping.
+            </summary>
+            <param name="args">Cancel event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CanTriggerCenterButtonTappedEvent">
+            <summary>
+            To check Whether the Center button tapped event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RaiseCenterButtonTapped(System.EventArgs)">
+            <summary>
+            Invoke event with the status for center button tapping.
+            </summary>
+            <param name="args">Event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CanTriggerTabItemTappedEvent">
+            <summary>
+            To check Whether the tab header item tapped event triggered or not.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RaiseTabItemTapped(Syncfusion.Android.TabView.TabItemTappedEventArgs)">
+            <summary>
+            Invoke event with the status for tab item tapping.
+            </summary>
+            <param name="args">event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetVisibleCount">
+            <summary>
+            Get visible count method.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetTabHeaderWidth">
+            <summary>
+            Get tab header width method.
+            </summary>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.UpdateSelectedIndex(System.Int32)">
+            <summary>
+            Update selected index method.
+            </summary>
+            <param name="index">Integer type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.OnLayout(System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc />
+            <summary>
+            Position all children within this layout.
+            </summary>    
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RaiseOnPropertyChanged(System.String)">
+            <summary>
+            This method is called by the Set accessor of each property.
+            The CallerMemberName attribute that is applied to the optional propertyName
+            parameter causes the property name of the caller to be substituted as an argument.
+            </summary>
+            <param name="propertyName">String type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.Dispose(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CheckTabPosition(System.Int32)">
+            <summary>
+            Checks the tabHeaderPosition.
+            </summary>
+            <returns>The tabheaderPosition.</returns>
+            <param name="tabPosition">tabPosition value.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.Checkmode(System.Int32)">
+            <summary>
+            Checks the checkmode.
+            </summary>
+            <returns>The overflowmode.</returns>
+            <param name="overflowmode">overflowmode value.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.Checkposition(System.Int32)">
+            <summary>
+            Checks the position.
+            </summary>
+            <returns>The position.</returns>
+            <param name="positionValue">position.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.MapAttributes(Android.Content.Context,Android.Util.IAttributeSet,System.Int32,System.Int32)">
+            <summary>
+            Maps the attributes.
+            </summary>
+            <param name="context">Context Property.</param>
+            <param name="attributes">Attributes Value.</param>
+            <param name="styleAttributes">Style attributes.</param>
+            <param name="styleRes">Style resource.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.CreateTabView(Syncfusion.Android.TabView.SfTabView,Android.Content.Context)">
+            <summary>
+            method for create tabview
+            </summary>
+            <param name="tabcontrolView">tabcontrolview</param>
+            <param name="con">context as con</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.InitializeViews">
+            <summary>
+            Creates and new objects for header and content container.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView._contentContainer_SelectionChanged(System.Object,Syncfusion.Android.TabView.IndexChangedEventArgs)">
+            <summary>
+            When index value changed due to user interaction in content pager.
+            </summary>
+            <param name="sender">Object type</param>
+            <param name="e">Event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.Run">
+            <summary>
+            The Run Method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.ScrollHeaderToWidth(System.Int32)">
+            <summary>
+            Scrolls the header to offset specified.
+            </summary>
+            <param name="offsetWidth"></param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.UpdateIndex(System.Int32)">
+            <summary>
+            Update index method.
+            </summary>
+            <param name="index">Integer type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.AssignDefaultValues">
+            <summary>
+            Assigns default values which are need to be initialized.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.SetDefaultValues">
+            <summary>
+            Sets defalut values which are need to be intialized.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetScrollPosition(System.Int32)">
+            <summary>
+            Get Scroll Position method.
+            </summary>
+            <param name="index">Integer type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetContentView(Syncfusion.Android.TabView.SfTabItem)">
+            <summary>
+            Gets the content view.
+            </summary>
+            <returns>The content view.</returns>
+            <param name="tabItem">Tab item.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetTabViewHeaderView(Syncfusion.Android.TabView.SfTabItem,System.Int32)">
+            <summary>
+            Gets the tab view header view.
+            </summary>
+            <returns>The tab view header view.</returns>
+            <param name="tabItem">Tab item from native.</param>
+            <param name="tag">Tag value denotes unique value for tabHeader.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.ResetNotifyCollectionChangedAction">
+            <summary>
+            Resets the notify collection changed action.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.AddNotifyCollectionChangedAction(System.Int32)">
+            <summary>
+            Adds the notify collection changed action.
+            </summary>
+            <param name="newStartingIndex">New starting index of added items.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.GetRemovedTabHeaderView(Syncfusion.Android.TabView.SfTabItem)">
+            <summary>
+            Gets the removed tab header view.
+            </summary>
+            <returns>The removed tab header view.</returns>
+            <param name="tabItem">Tab item.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RemoveNotifyCollectionChangedAction(System.Int32,System.Object)">
+            <summary>
+            Removes the notify collection changed action.
+            </summary>
+            <param name="oldStartingIndex">Old starting index.</param>
+            <param name="tabItem">Removed tab item.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.RefreshContainer(System.Int32)">
+            <summary>
+            Refresh the both header and content container.
+            </summary>
+            <param name="oldStartingIndex"></param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.UpdateTagOfHeaderView">
+            <summary>
+            Updates the tag of header view.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.Items_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Items collection changed method.
+            </summary>
+            <param name="sender">object type</param>
+            <param name="e">changed event args</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.ReplaceNotifyCollectionChangedAction(System.Int32,System.Object)">
+            <summary>
+            Replaces the notify collection changed action.
+            </summary>
+            <param name="newStartingIndex">New starting index.</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.SetChildViews">
+            <summary>
+            Removes all children and add new child from the <see cref="P:Syncfusion.Android.TabView.SfTabView.Items"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabView.SetShadow">
+            <summary>
+            Sets the Color of the ShadowGradient from shadow Color and adds the background to layout 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SelectionChangedEventArgs">
+            <inheritdoc />
+            <summary>
+            Contains data for the event which is raised selected index changed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionChangedEventArgs.Index">
+            <summary>
+            Gets the value of selected index.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SelectionChangedEventArgs.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabItemTappedEventArgs">
+            <inheritdoc />
+            <summary>
+            Contains data for the event which is raised while tapped on the header item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.TabItemTappedEventArgs.TabItem">
+            <summary>
+            Gets the selected <see cref="T:Syncfusion.Android.TabView.SfTabItem"/> value. 
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SfTabItem">
+            <inheritdoc />
+            <summary>
+            Represents a single element in <see cref="T:Syncfusion.Android.TabView.SfTabView" /> control.
+            It contains the properties to configure title and content region.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.title">
+            <summary>
+            title field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.content">
+            <summary>
+            Content field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.titleContent">
+            <summary>
+            Title content field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.isSelected">
+            <summary>
+            Selected field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.fontIconText">
+            <summary>
+            Font icon text field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.titleFontStyle">
+            <summary>
+            Title font style field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.titleFontSize">
+            <summary>
+            Title font size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.fontIconStyle">
+            <summary>
+            Font icon style field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.fontIconFontSize">
+            <summary>
+            Font icon font size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.selectionColor">
+            <summary>
+            Selection color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.fontIconFontColor">
+            <summary>
+            Title font icon font color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.titleFontColor">
+            <summary>
+            title font color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SfTabItem.imageSource">
+            <summary>
+            image source of image view in header view
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.SfTabItem.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.Title">
+            <summary>
+            Gets or sets the value for the text of tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.ImageSource">
+            <summary>
+             Gets or sets the image source for image view in the tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.Content">
+            <summary>
+            Gets or sets the value for the content region in a tab.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.HeaderContent">
+            <summary>
+            Gets or sets the value for the custom view for of a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.IconFont">
+            <summary>
+            Gets or sets the value for the icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.TitleFontStyle">
+            <summary>
+            Gets or sets the value for the font family of text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.TitleFontSize">
+            <summary>
+            Gets or sets the value for the font size of text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.TitleFontColor">
+            <summary>
+            Gets or sets the value for the color of text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.FontIconFontColor">
+            <summary>
+            Gets or sets the value for the color of font icon text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.FontIconStyle">
+            <summary>
+            Gets or sets the value for the font family of icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.FontIconFontSize">
+            <summary>
+            Gets or sets the value for the font size of icon font text for a tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.SelectionColor">
+            <summary>
+            Gets or sets the value for the selection color of tab header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.SfTabItem.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether the selection state of a particular <see cref="T:Syncfusion.Android.TabView.SfTabItem"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.SfTabItem.RaiseOnPropertyChanged(System.String)">
+            <summary>
+            This method is called by the Set accessor of each property.
+            The CallerMemberName attribute that is applied to the optional propertyName
+            parameter causes the property name of the caller to be substituted as an argument.
+            </summary>
+            <param name="propertyName">String type</param>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.OverflowMode">
+            <summary>
+            Describes the possible values for overflow mode. 
+            These values are used to update the header layout in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            based on that pagination for excess tabs can be displayed.
+            </summary>    
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowMode.Scroll">
+            <summary>
+            Specifies the scrollable header to view the excess tabs.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowMode.DropDown">
+            <summary>
+            Specifies the expandable more drop down menu.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowMode.CenterButton">
+            <summary>
+            Specifies the expandable more Center button mode.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabDisplayMode">
+            <summary>
+            Describes the possible values for the display type of headers in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabDisplayMode.Image">
+            <summary>
+            Specifies the image type for header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabDisplayMode.Text">
+            <summary>
+            Specifies the text type for header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for the header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabDisplayMode.NoHeader">
+            <summary>
+            Specifies the no header in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.TabHeaderPosition">
+            <summary>
+            Describes the possible values for the position of header layout in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderPosition.Top">
+            <summary>
+            Specifies the top location above the content region of <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.TabHeaderPosition.Bottom">
+            <summary>
+            Specifies the bottom location below the content region of <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.SelectionIndicatorPosition">
+            <summary>
+            Describes the possible values for the position of selection strip in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            selection indicator is to indicate the selected index in the <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorPosition.Top">
+            <summary>
+            Specifies the top location for the selection indicator in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorPosition.Bottom">
+            <summary>
+            Specifies the bottom location for the selection indicator in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.SelectionIndicatorPosition.Fill">
+            <summary>
+            Specifies the fill region for the selection indicator in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control.
+            </summary>
+            <remarks>Selection color of <see cref="T:Syncfusion.Android.TabView.SfTabItem"/> should be varied with the strip color when set this value. /></remarks>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.OverflowButtonDisplayMode">
+            <summary>
+            Option to choose the type of header for its rendering content.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonDisplayMode.Text">
+            <summary>
+            Specifies the text type for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.Android.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonDisplayMode.Image">
+            <summary>
+            Specifies the image type for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.Android.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.OverflowButtonDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            when <see cref="T:Syncfusion.Android.TabView.OverflowMode"/> is set as drop down.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.CenterButtonDisplayMode">
+            <summary>
+            Option to choose the type of center button for its rendering content.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonDisplayMode.Text">
+            <summary>
+            Specifies the text type for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonDisplayMode.Image">
+            <summary>
+            Specifies the image type for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonDisplayMode.ImageWithText">
+            <summary>
+            Specifies both image as well as text for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView"/> control,
+            </summary>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.CenterButtonRenderer">
+            <inheritdoc />
+            <summary>
+            Draws the appearance of Center button
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.tabView">
+            <summary>
+            Tab view field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.paint">
+            <summary>
+            Paint field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.bitmap">
+            <summary>
+            Bit map field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.canvas">
+            <summary>
+            Canvas field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.shape">
+            <summary>
+            The shape.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.textPosition">
+            <summary>
+            The text position.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonRenderer.fontIconPosition">
+            <summary>
+            The text position.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.#ctor(Android.Content.Context,Syncfusion.Android.TabView.SfTabView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.Android.TabView.TabHeaderView"/> class.
+            </summary>
+            <param name="context">Context type</param>
+            <param name="tabview">Tab view </param>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonRenderer.ImagePath">
+            <summary>
+            Gets or sets the value of Image path property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonRenderer.TabView">
+            <summary>
+            Gets or sets the rotator.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.OnTouchEvent(Android.Views.MotionEvent)">
+            <summary>
+            On touch event
+            </summary>
+            <param name="e">Motion event</param>
+            <returns>return value</returns>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.OnDraw(Android.Graphics.Canvas)">
+            <inheritdoc />
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.Dispose(System.Boolean)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="disposing">Boolean type</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.DrawText(Android.Graphics.Canvas,System.Int32,System.Int32)">
+            <summary>
+            Draw text method.
+            </summary>
+            <param name="canvas">Canvas type</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.DrawFont(Android.Graphics.Canvas,System.Int32,System.Int32)">
+            <summary>
+            Draw font method.
+            </summary>
+            <param name="canvas">Canvas type</param>
+            <param name="left">Left value</param>
+            <param name="top">Top value</param>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonRenderer.GetBitMapFromImageName(System.String)">
+            <summary>
+            Get Bitmap from image name method.
+            </summary>
+            <param name="imageName">String type</param>
+            <returns>return value</returns>
+        </member>
+        <member name="T:Syncfusion.Android.TabView.CenterButtonSettings">
+            <inheritdoc />
+            <summary>
+            Provides set of properties to be customized for more button in <see cref="T:Syncfusion.Android.TabView.SfTabView" />.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.width">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.height">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.cornerRadius">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.borderThickness">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.borderColor">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.pressedColor">
+            <summary>
+            Width field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.text">
+            <summary>
+            Text field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.fontText">
+            <summary>
+            Font text field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.displayMode">
+            <summary>
+            dispaly mode field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.centerButtonFontStyle">
+            <summary>
+            Over flow button font style field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.centerButtonFontSize">
+            <summary>
+            Over flow button ont size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.centerButtonFontColor">
+            <summary>
+            Over flow button font color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.backgroundColor">
+            <summary>
+            Background color field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.fontIconStyle">
+            <summary>
+            Typeface field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.fontIconFontSize">
+            <summary>
+            Font icon font size field.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.Android.TabView.CenterButtonSettings.fontIconFontColor">
+            <summary>
+            Font icon font color field.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.Android.TabView.CenterButtonSettings.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.Title">
+            <summary>
+            Gets or sets the value for more button text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.Width">
+            <summary>
+            Gets or sets the value for the width of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.DisplayMode">
+            <summary>
+            Gets or sets the value to choose the display type of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.TitleFontSize">
+            <summary>
+            Gets or sets the value to font size of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.TitleFontColor">
+            <summary>
+            Gets or sets the value to font color of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.IconFont">
+            <summary>
+            Gets or sets the value for more button font text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.FontIconFontSize">
+            <summary>
+            Gets or sets the value to font size of icon text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.FontIconStyle">
+            <summary>
+            Gets or sets the value to font family of icon text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.BackgroundColor">
+            <summary>
+            Gets or sets the value for the background color of more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.TitleFontStyle">
+            <summary>
+            Gets or sets the value to font family of text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.FontIconFontColor">
+            <summary>
+            Gets or sets the value to font color of icon text in more button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.Height">
+            <summary>
+            Gets or sets the value for height of center button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.CornerRadius">
+            <summary>
+            Gets or sets the value for Corner Radius of center button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.BorderThickness">
+            <summary>
+            Gets or sets the value for border Thickness of center button.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.BorderColor">
+            <summary>
+            Gets or sets the color of the border.
+            </summary>
+            <value>The color of the border.</value>
+        </member>
+        <member name="P:Syncfusion.Android.TabView.CenterButtonSettings.PressedColor">
+            <summary>
+            Gets or sets the value for the selection color of tab header.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.Android.TabView.CenterButtonSettings.RaiseOnPropertyChanged(System.String)">
+            <summary>
+            This method is called by the Set accessor of each property.
+            The CallerMemberName attribute that is applied to the optional propertyName
+            parameter causes the property name of the caller to be substituted as an argument.
+            </summary>
+            <param name="propertyName">String type</param>
+        </member>
+    </members>
+</doc>

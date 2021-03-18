@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\MonoAndroid90\proguard.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_googlegps_playservicesmeasurementapi" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_googlegps_playservicesmeasurementapi">
+    <ItemGroup>
+      <XamarinBuildDownload Include="googlegps-16.0.4/playservicesmeasurementapi">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/android/gms/play-services-measurement-api/16.0.4/play-services-measurement-api-16.0.4.aar</Url>
+        <ToFile>playservicesmeasurementapi-16.0.4.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Md5>6e1040903c16b3e5e292e8e6f7076661</Md5>
+      </XamarinBuildDownload>
+    </ItemGroup>
+    <ItemGroup>
+      <XamarinBuildDownloadRestoreAssemblyAar Include="$(XamarinBuildDownloadDir)googlegps-16.0.4\playservicesmeasurementapi\playservicesmeasurementapi-16.0.4.aar">
+        <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+        <AssemblyName>Xamarin.GooglePlayServices.Measurement.Api</AssemblyName>
+      </XamarinBuildDownloadRestoreAssemblyAar>
+    </ItemGroup>
+  </Target>
+
+</Project>

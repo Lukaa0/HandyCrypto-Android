@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:layout_height="match_parent">
+
+	
+		
+	<Com.Syncfusion.Charts.SfChart
+		android:layout_height="match_parent"
+		android:id="@+id/arima_prediction_chart"
+		android:layout_width="match_parent"
+		/>
+	<ProgressBar
+        android:layout_width="wrap_content"
+		android:id="@+id/arima_prediction_progressbar"
+        android:layout_height="wrap_content"
+		android:visibility="invisible"
+	android:layout_centerInParent="true"/>
+	
+    
+</RelativeLayout>

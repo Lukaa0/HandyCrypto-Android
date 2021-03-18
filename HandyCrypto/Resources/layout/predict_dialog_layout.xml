@@ -1,0 +1,46 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="25px"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WARNING: The prediction algorithms are in experimental phase, use it at your own risk."
+        android:textColor="@color/error_color_material_light"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/arima_forecast_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Use ARIMA forecasting"
+            android:backgroundTint="#ff2e7d32" 
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="15px"
+            android:id="@+id/lstm_forecast_btn"
+            android:layout_height="wrap_content"
+            android:text="Use LSTM prediction"
+            android:backgroundTint="#ff2e7d32" 
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="Use NN forecasting(coming soon)"
+            android:backgroundTint="#ffd50000" 
+            />
+    </LinearLayout>
+</LinearLayout>

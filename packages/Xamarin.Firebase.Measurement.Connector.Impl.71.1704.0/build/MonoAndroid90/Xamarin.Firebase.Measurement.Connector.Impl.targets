@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ProguardConfiguration Include="$(MSBuildThisFileDirectory)..\..\proguard\MonoAndroid90\proguard.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <XamarinBuildRestoreResources Include="_XbdRestoreItems_googlefb_firebasemeasurementconnectorimpl" />
+  </ItemGroup>
+  <Target Name="_XbdRestoreItems_googlefb_firebasemeasurementconnectorimpl">
+    <ItemGroup>
+      <XamarinBuildDownload Include="googlefb-17.0.4/firebasemeasurementconnectorimpl">
+        <Url>https://dl.google.com/dl/android/maven2/com/google/firebase/firebase-measurement-connector-impl/17.0.4/firebase-measurement-connector-impl-17.0.4.aar</Url>
+        <ToFile>firebasemeasurementconnectorimpl-17.0.4.aar</ToFile>
+        <Kind>Uncompressed</Kind>
+        <Md5>f77fecd4856b736d83949fe9fe638ed3</Md5>
+      </XamarinBuildDownload>
+    </ItemGroup>
+    <ItemGroup>
+      <XamarinBuildDownloadRestoreAssemblyAar Include="$(XamarinBuildDownloadDir)googlefb-17.0.4\firebasemeasurementconnectorimpl\firebasemeasurementconnectorimpl-17.0.4.aar">
+        <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+        <AssemblyName>Xamarin.Firebase.Measurement.Connector.Impl</AssemblyName>
+      </XamarinBuildDownloadRestoreAssemblyAar>
+    </ItemGroup>
+  </Target>
+
+</Project>

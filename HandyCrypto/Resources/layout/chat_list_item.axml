@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+	android:padding="20dp"
+	
+    android:layout_height="wrap_content">
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:id="@+id/chat_main_container"
+		android:layout_height="wrap_content">
+		<ImageView
+		android:id="@+id/chat_image"
+		android:layout_height="38dp"
+		android:layout_margin="10dp"
+		android:layout_centerVertical="true"
+		android:layout_width="38dp"/>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_marginLeft="8dp"
+		android:layout_toRightOf="@id/chat_image"
+		android:id="@+id/chat_nickname"
+		android:text="dawdwaawdaw@gmail.com"/>
+	<com.github.library.bubbleview.BubbleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dasdasdasdasdasdas"
+		android:id="@+id/chat_bubbleview"
+        android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/chat_nickname"
+		android:layout_toRightOf="@id/chat_image"
+        app:arrowWidth="8dp"
+        app:angle="8dp"
+        app:arrowHeight="10dp"
+        app:arrowPosition="14dp"
+        app:arrowLocation="left"
+        app:arrowCenter="true"
+        app:bubbleColor="#dedede"/>
+
+
+		</RelativeLayout>
+</RelativeLayout>

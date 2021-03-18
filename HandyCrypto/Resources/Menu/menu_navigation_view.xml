@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+      android:id="@+id/nav_wallet"
+      android:title="Wallet"/>
+    <item
+      android:id="@+id/nav_alert"
+      android:title="Alert"/>
+    <item
+      android:id="@+id/nav_coins"
+      android:title="Coins"/>
+    <item
+      android:id="@+id/nav_favorites"
+      android:title="Favorites"/>
+  </group>
+
+  <item android:title="Communicate">
+    <menu>
+      <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"/>
+      <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"/>
+    </menu>
+  </item>
+  <item android:title="Help"
+        android:visible="false">
+    <menu>
+      <item
+        android:id="@+id/nav_bug_report"
+        android:title="Report a bug"/>
+      <item
+        android:id="@+id/nav_settings"
+        android:visible="false"
+        android:title="Settings"/>
+    </menu>
+  </item>
+
+</menu>

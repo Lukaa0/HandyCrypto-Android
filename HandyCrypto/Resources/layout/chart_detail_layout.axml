@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="7dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/test_date_text"/>
+	
+			<Syncfusion.Android.Buttons.SfSegmentedControl
+		android:layout_height="36dp"
+		android:id="@+id/segment_chartType"
+		android:layout_width="match_parent"/>
+	<Com.Syncfusion.Charts.SfChart
+		android:layout_height="match_parent"
+		android:id="@+id/detail_chart"
+		android:layout_width="match_parent"
+		android:layout_weight="3"/>
+	<Syncfusion.Android.Buttons.SfSegmentedControl
+		android:layout_height="36dp"
+		android:id="@+id/segment_chartTime"
+		android:layout_width="match_parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast pricess"
+        android:id="@+id/fcast_btn"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:backgroundTint="#fff57f17" />
+</LinearLayout>
